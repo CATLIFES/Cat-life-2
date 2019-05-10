@@ -1,0 +1,98 @@
+*{margin:0;padding: 0;}
+html{
+	font-family: arial, helvetica, sans-serif;
+	font-size: 16px;
+}
+/*Contenedor*/
+#content{
+	width: 85%;
+	margin-right: auto;
+	margin-left: auto;
+}
+/*Header*/
+#header{
+	background-color: lightblue;
+	height: 100px;
+	color: white;
+}
+#navPrincipal{background: navy}
+
+a{color: white;text-decoration:none;}
+
+
+
+
+
+/*Section*/
+#principal{}/*id del section*/
+#contenido{/*id del div*/
+	background: grey;
+	width: 79%;
+	float:left;
+	}
+#bannerDer{/*id del aside*/
+	background: lightgrey;
+	height: 200px;
+	width: 20%;
+	float: right;
+	}
+#footer{
+	clear: both;
+	height: 60px;
+	background: lightblue;
+	text-align: center;
+}
+
+
+/* Menu de navegacion*/
+
+/*Selectores compuestos*/
+#navPrincipal ul{
+	list-style-type: none;
+	margin-left: 0; 
+	}
+	#navPrincipal ul li{
+		/*Para menus desplegable*/
+		float: left;
+		/*Para menu sin desplegables*/
+		/*display: inline-block;*/
+		position: relative;
+		}
+		#navPrincipal ul li a{
+			display: block;
+			padding: 10px 15px;
+		}
+		/*Pseudo-elemento -> ::selection*/
+		::selection{
+			background: red;
+		}
+		/*Pseudo-clase -> :hover*/
+		#navPrincipal ul li a:hover{
+			background: lightblue;
+		}
+		/*Menu Desplegable*/
+		#navPrincipal ul li ul{
+			/*visibility: hidden;*/
+			display: none;
+			position: absolute;
+			background: lightblue;
+			width: 200px;
+			font-size: 14px;
+		}
+		#navPrincipal ul li ul li{
+			float: none;
+		}
+		#navPrincipal ul li:hover ul{
+			display: block;
+		}
+
+
+
+.clear{
+	clear: both;
+}
+
+/*prueba*/
+.dos p span{
+	color:red;
+}
